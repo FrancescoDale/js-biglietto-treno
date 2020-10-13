@@ -14,11 +14,10 @@ document.getElementById('fullprice').innerHTML = fullPrice;
 
 // calcolo delle percentuali di sconto
 
-// if ( isNaN(userDistance) || isNan(userAge) ) {
-//     // document.getElementById('fullprice').innerHTML = 'FORMATO NON VALIDO - INSERIRE VALORE NUMERICO';
-// }
-// else
-if (userAge<18)  {
+if ( isNaN(userDistance) || isNaN(userAge) ) {
+     document.getElementById('fullprice').innerHTML = 'FORMATO NON VALIDO - INSERIRE VALORE NUMERICO';
+}
+else if (userAge<18)  {
         userDiscount = fullPrice * 0.80;
         document.getElementById('discountedprice').innerHTML = userDiscount;
     }
@@ -29,4 +28,4 @@ if (userAge<18)  {
     else {
             userDiscount = fullPrice * 0.60;
             document.getElementById('discountedprice').innerHTML = userDiscount;
-}
+    }
