@@ -16,6 +16,7 @@ document.getElementById('fullprice').innerHTML = fullPrice;
 
 if ( isNaN(userDistance) || isNaN(userAge) ) {
      document.getElementById('fullprice').innerHTML = 'FORMATO NON VALIDO - INSERIRE VALORE NUMERICO';
+     document.getElementById('discountedprice').innerHTML = 'SPIACENTI -FORMATO NON VALIDO - INSERIRE VALORE NUMERICO';
 }
 else if (userAge<18)  {
         userDiscount = fullPrice * 0.80;
