@@ -1,7 +1,6 @@
 var userDistance;
 var price;
 var fullPrice;
-
 var userAge;
 var userDiscount;
 
@@ -15,15 +14,19 @@ document.getElementById('fullprice').innerHTML = fullPrice;
 
 // calcolo delle percentuali di sconto
 
-if (userAge<18) {
-    userDiscount = fullPrice * 0.80;
-    document.getElementById('discountedprice').innerHTML = userDiscount;
-}
-else if (userAge>=18 && userAge<65) {
-    userDiscount = fullPrice;
-    document.getElementById('discountedprice').innerHTML = userDiscount;
-}
-else {
-    userDiscount = fullPrice * 0.60;
-    document.getElementById('discountedprice').innerHTML = userDiscount;
+// if ( isNaN(userDistance) || isNan(userAge) ) {
+//     // document.getElementById('fullprice').innerHTML = 'FORMATO NON VALIDO - INSERIRE VALORE NUMERICO';
+// }
+// else
+if (userAge<18)  {
+        userDiscount = fullPrice * 0.80;
+        document.getElementById('discountedprice').innerHTML = userDiscount;
+    }
+    else if (userAge>=18 && userAge<65) {
+        userDiscount = fullPrice;
+        document.getElementById('discountedprice').innerHTML = userDiscount;
+    }
+    else {
+            userDiscount = fullPrice * 0.60;
+            document.getElementById('discountedprice').innerHTML = userDiscount;
 }
