@@ -23,3 +23,7 @@ else if (userAge>=18 && userAge<65) {
     userDiscount = fullPrice;
     document.getElementById('discountedprice').innerHTML = userDiscount;
 }
+else {
+    userDiscount = fullPrice * 0.60;
+    document.getElementById('discountedprice').innerHTML = userDiscount;
+}
